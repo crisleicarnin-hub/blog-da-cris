@@ -1,74 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda e Maquiagem</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Vogue - Blog de Moda</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Moda & Maquiagem</h1>
-        <nav>
+
+<header>
+    <div class="logo">Fashion Vogue</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Tendências</a></li>
+            <li><a href="#">Looks</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Moda, Elegância e Tendências</h1>
+        <p>Descubra as novidades do mundo fashion e inspire-se com os melhores looks.</p>
+        <button>Explorar</button>
+    </div>
+</section>
+
+<main class="container">
+
+    <section class="posts">
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000" alt="Moda Feminina">
+            <div class="card-content">
+                <h2>Tendências Primavera-Verão 2026</h2>
+                <p>
+                    As passarelas trouxeram cores vibrantes, tecidos leves
+                    e combinações ousadas para a nova estação.
+                </p>
+                <a href="#">Ler mais →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000" alt="Fashion">
+            <div class="card-content">
+                <h2>Como Montar Looks Sofisticados</h2>
+                <p>
+                    Aprenda a combinar peças básicas com acessórios elegantes
+                    para criar produções incríveis.
+                </p>
+                <a href="#">Ler mais →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000" alt="Street Style">
+            <div class="card-content">
+                <h2>Street Style em Alta</h2>
+                <p>
+                    Conheça as tendências urbanas que estão dominando as ruas
+                    das principais capitais da moda.
+                </p>
+                <a href="#">Ler mais →</a>
+            </div>
+        </article>
+
+    </section>
+
+    <aside class="sidebar">
+
+        <div class="widget">
+            <h3>Sobre o Blog</h3>
+            <p>
+                Fashion Vogue é um portal dedicado às últimas tendências,
+                dicas de estilo e novidades do universo fashion.
+            </p>
+        </div>
+
+        <div class="widget">
+            <h3>Categorias</h3>
             <ul>
-                <li><a href="#moda">Moda</a></li>
-                <li><a href="#maquiagem">Maquiagem</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li>Moda Feminina</li>
+                <li>Moda Masculina</li>
+                <li>Streetwear</li>
+                <li>Acessórios</li>
+                <li>Beleza</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Seção de Moda -->
-    <section id="moda">
-        <h2>Moda</h2>
-        <p>Descubra as últimas tendências de roupas, acessórios e estilos que estão em alta.</p>
-        <div class="cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/250x150" alt="Look 1">
-                <h3>Look Casual</h3>
-                <p>Confortável e estiloso para o dia a dia.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/250x150" alt="Look 2">
-                <h3>Look Elegante</h3>
-                <p>Para ocasiões especiais e eventos chiques.</p>
-            </div>
         </div>
-    </section>
 
-    <!-- Seção de Maquiagem -->
-    <section id="maquiagem">
-        <h2>Maquiagem</h2>
-        <p>Dicas de beleza, tutoriais e produtos para realçar sua aparência.</p>
-        <div class="cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/250x150" alt="Maquiagem 1">
-                <h3>Make Natural</h3>
-                <p>Realce sua beleza de forma sutil e elegante.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/250x150" alt="Maquiagem 2">
-                <h3>Make Glam</h3>
-                <p>Para festas e eventos, com cores vibrantes.</p>
-            </div>
-        </div>
-    </section>
+    </aside>
 
-    <!-- Galeria -->
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/150" alt="Imagem 1">
-            <img src="https://via.placeholder.com/150" alt="Imagem 2">
-            <img src="https://via.placeholder.com/150" alt="Imagem 3">
-            <img src="https://via.placeholder.com/150" alt="Imagem 4">
-        </div>
-    </section>
+</main>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Moda & Maquiagem. Todos os direitos reservados.</p>
-    </footer>
+<section class="gallery">
+
+    <h2>Galeria Fashion</h2>
+
+    <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1000" alt="">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000" alt="">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1000" alt="">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000" alt="">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1000" alt="">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1000" alt="">
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>Receba Novidades</h2>
+    <p>Inscreva-se para receber tendências e dicas exclusivas.</p>
+
+    <form>
+        <input type="email" placeholder="Digite seu e-mail">
+        <button>Inscrever-se</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Fashion Vogue - Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
