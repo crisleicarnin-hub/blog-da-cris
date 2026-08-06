@@ -1,421 +1,1259 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto: Moda Brasileira - Uma Viagem Cultural</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500;600&amp;display=swap');
-        
-        :root {
-            --brazil-green: #009739;
-            --brazil-yellow: #FEDD00;
-            --brazil-blue: #002776;
-        }
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .title-font {
-            font-family: 'Playfair Display', Georgia, serif;
-        }
 
-        .brazil-gradient {
-            background: linear-gradient(135deg, #009739 0%, #002776 100%);
-        }
+    <title>Moda Brasileira - Uma Viagem Cultural</title>
 
-        .section-title {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(to right, #FEDD00, #009739);
-            border-radius: 2px;
-        }
 
-        .fashion-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .fashion-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.<grok-card data-id="5fYGs" data-type="generated_image_card" data-plain-type="render_generated_image"  data-arg-layout="block"  data-arg-orientation="landscape" ></grok-card>1);
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .timeline-item {
-            position: relative;
-        }
-        
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: -20px;
-            width: 3px;
-            background: #009739;
-        }
-        
-        .timeline-item:last-child:before {
-            display: none;
-        }
 
-        .nav-link {
-            transition: all 0.2s ease;
-        }
-        
-        .nav-link:hover {
-            color: #FEDD00;
-            transform: translateY(-2px);
-        }
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        .brazil-flag {
-            background: linear-gradient(#009739 33%, #FEDD00 33%, #FEDD00 66%, #002776 66%);
-        }
-    </style>
+
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-x-3">
-                <div class="w-12 h-12 rounded-full brazil-flag flex items-center justify-center">
-                    <span class="text-white font-bold text-3xl">🇧🇷</span>
-                </div>
-                <div>
-                    <h1 class="font-bold text-3xl tracking-tighter">Moda Brasileira</h1>
-                    <p class="text-xs text-gray-500 -mt-1">Projeto Cultural</p>
-                </div>
-            </div>
-            
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#introducao" class="nav-link">Introdução</a>
-                <a href="#historia" class="nav-link">História</a>
-                <a href="#tradicional" class="nav-link">Estilos Tradicionais</a>
-                <a href="#contemporanea" class="nav-link">Moda Atual</a>
-                <a href="#designers" class="nav-link">Designers</a>
-                <a href="#icones" class="nav-link">Ícones</a>
-            </div>
-            
-            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })" 
-                    class="px-6 py-2.5 bg-[#009739] hover:bg-[#007a2f] text-white rounded-full text-sm font-semibold flex items-center gap-x-2 transition-colors">
-                <i class="fas fa-download"></i>
-                <span>Baixar Projeto</span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- HERO -->
-    <header class="relative h-[100dvh] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-black/40 z-10"></div>
-        <img src="https://picsum.photos/id/1005/2000/1200" 
-             class="absolute inset-0 w-full h-full object-cover" alt="Moda Brasileira vibrante">
-        
-        <div class="relative z-20 text-center px-6 max-w-5xl">
-            <div class="inline-flex items-center gap-x-2 bg-white/90 px-4 py-1.5 rounded-full mb-6">
-                <div class="w-3 h-3 bg-[#FEDD00] rounded-full animate-pulse"></div>
-                <span class="text-sm font-semibold text-gray-800">Brasil • Cultura • Criatividade</span>
-            </div>
-            
-            <h1 class="text-7xl md:text-8xl font-bold text-white tracking-tighter title-font leading-none mb-4">
-                MODA<br>BRASILEIRA
-            </h1>
-            <p class="text-2xl md:text-3xl text-white/90 max-w-2xl mx-auto mb-8">
-                Uma viagem pela história, cultura e criatividade que conquistou o mundo
-            </p>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <button onclick="document.getElementById('introducao').scrollIntoView({ behavior: 'smooth' })" 
-                        class="px-8 py-4 bg-white text-gray-900 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition-all flex items-center gap-x-3 shadow-xl">
-                    <span>Explorar o Projeto</span>
-                    <i class="fas fa-arrow-down"></i>
-                </button>
-            </div>
-        </div>
-        
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center text-white/70 text-sm">
-            <span>Role para descobrir</span>
-            <i class="fas fa-chevron-down mt-1 animate-bounce"></i>
-        </div>
-    </header>
+<body>
 
-    <!-- INTRODUÇÃO -->
-    <section id="introducao" class="max-w-7xl mx-auto px-6 py-20">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+<!-- BARRA DE PROGRESSO -->
+
+<div id="progress"></div>
+
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="nav-container">
+
+
+        <div class="logo">
+
+
+            <div class="logo-circle">
+
+                ✿
+
+            </div>
+
+
             <div>
-                <span class="text-[#009739] font-semibold tracking-[3px] text-sm">DESDE 1500 ATÉ HOJE</span>
-                <h2 class="section-title text-5xl font-bold tracking-tighter mt-3 mb-6">O que é a Moda Brasileira?</h2>
-                
-                <div class="prose prose-lg text-gray-600">
-                    <p>A moda brasileira é uma das mais ricas e diversas do mundo. Ela nasce da mistura de povos indígenas, africanos escravizados, portugueses, italianos, alemães, japoneses e muitos outros que chegaram ao Brasil.</p>
-                    <p>É uma moda colorida, alegre, criativa e que valoriza o corpo, o clima tropical e a identidade cultural. O Brasil não copia tendências — ele cria o seu próprio estilo e exporta para o mundo inteiro.</p>
-                </div>
-            </div>
-            
-            <div class="relative">
-                <img src="https://picsum.photos/id/1011/800/600" 
-                     class="rounded-3xl shadow-2xl w-full" alt="Diversidade da moda brasileira">
-                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-[220px]">
-                    <div class="flex items-center gap-x-3">
-                        <i class="fas fa-globe text-3xl text-[#009739]"></i>
-                        <div>
-                            <p class="font-bold">5º maior mercado</p>
-                            <p class="text-sm text-gray-500">de moda do mundo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- HISTÓRIA -->
-    <section id="historia" class="bg-white py-20 border-t">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-14">
-                <span class="text-[#009739] font-semibold">LINHA DO TEMPO</span>
-                <h2 class="section-title text-5xl font-bold tracking-tighter mt-2">História da Moda Brasileira</h2>
+                <h1 class="title-font">
+                    Moda Brasileira
+                </h1>
+
+
+                <p>
+                    Projeto Cultural
+                </p>
+
             </div>
 
-            <div class="max-w-3xl mx-auto space-y-8">
-                <!-- Timeline items -->
-                <div class="timeline-item flex gap-8">
-                    <div class="w-8 h-8 bg-[#009739] rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold z-10">1</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-2xl">Período Colonial (1500-1822)</h3>
-                        <p class="mt-2 text-gray-600">Roupas portuguesas pesadas adaptadas ao calor tropical. Tecidos leves de algodão e linho surgem. Influência indígena com redes e adornos de penas.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item flex gap-8">
-                    <div class="w-8 h-8 bg-[#009739] rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold z-10">2</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-2xl">Império do Brasil (1822-1889)</h3>
-                        <p class="mt-2 text-gray-600">Influência francesa forte. D. Pedro II e a corte usavam roupas europeias, mas surgem adaptações para o clima. As primeiras modistas brasileiras aparecem no Rio de Janeiro.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item flex gap-8">
-                    <div class="w-8 h-8 bg-[#009739] rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold z-10">3</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-2xl">Século XX - Modernização</h3>
-                        <p class="mt-2 text-gray-600">Anos 1920-50: Carmen Miranda leva o estilo brasileiro para Hollywood. Anos 60-70: Tropicalismo mistura cores fortes, estampas e liberdade. Surge a moda praia brasileira.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item flex gap-8">
-                    <div class="w-8 h-8 bg-[#009739] rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold z-10">4</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-2xl">Anos 1990 até hoje</h3>
-                        <p class="mt-2 text-gray-600">Explosão internacional com Gisele Bündchen. São Paulo Fashion Week se torna uma das maiores da América Latina. Foco em moda sustentável e valorização da cultura brasileira.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ESTILOS TRADICIONAIS -->
-    <section id="tradicional" class="max-w-7xl mx-auto px-6 py-20">
-        <div class="text-center mb-12">
-            <span class="text-[#009739] font-semibold">IDENTIDADE CULTURAL</span>
-            <h2 class="section-title text-5xl font-bold tracking-tighter mt-2">Estilos Tradicionais e Regionais</h2>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="fashion-card bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://picsum.photos/id/160/600/340" class="w-full h-56 object-cover" alt="Festa Junina">
-                <div class="p-7">
-                    <h3 class="font-bold text-2xl mb-3">Festa Junina</h3>
-                    <p class="text-gray-600">Vestidos xadrez coloridos, chapéus de palha, lenços e botas. Representa o interior do Brasil e é uma das festas mais alegres do país. As cores vibrantes são marca registrada.</p>
-                </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="fashion-card bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://picsum.photos/id/201/600/340" class="w-full h-56 object-cover" alt="Carnaval">
-                <div class="p-7">
-                    <h3 class="font-bold text-2xl mb-3">Carnaval do Rio</h3>
-                    <p class="text-gray-600">As fantasias mais elaboradas do mundo! Penas, lantejoulas, brilho e muito movimento. Cada escola de samba tem seu próprio enredo e cores. É arte, dança e moda ao mesmo tempo.</p>
-                </div>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="fashion-card bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://picsum.photos/id/251/600/340" class="w-full h-56 object-cover" alt="Influência Indígena">
-                <div class="p-7">
-                    <h3 class="font-bold text-2xl mb-3">Influência Indígena</h3>
-                    <p class="text-gray-600">Padrões geométricos, tecidos de fibra natural, colares de sementes e penas. Muitos designers atuais usam esses elementos de forma respeitosa e moderna.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- MODA CONTEMPORÂNEA -->
-    <section id="contemporanea" class="bg-[#002776] text-white py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-[#FEDD00] font-semibold">ATUALIDADE</span>
-                    <h2 class="text-5xl font-bold tracking-tighter mt-2 mb-6">Moda Brasileira Hoje</h2>
-                    <div class="space-y-4 text-lg text-white/90">
-                        <p>• <strong>São Paulo Fashion Week (SPFW)</strong> — um dos maiores eventos de moda da América Latina</p>
-                        <p>• <strong>Moda Sustentável</strong> — Brasil é referência mundial em algodão orgânico e materiais ecológicos</p>
-                        <p>• <strong>Estilo Carioca</strong> — leve, colorido e confortável, inspirado no Rio de Janeiro</p>
-                        <p>• <strong>Exportação</strong> — peças brasileiras são vendidas em lojas de luxo na Europa, EUA e Ásia</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/id/29/800/600" class="rounded-3xl shadow-2xl" alt="Desfile de moda contemporânea brasileira">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- DESIGNERS -->
-    <section id="designers" class="max-w-7xl mx-auto px-6 py-20">
-        <div class="text-center mb-12">
-            <span class="text-[#009739] font-semibold">TALENTOS BRASILEIROS</span>
-            <h2 class="section-title text-5xl font-bold tracking-tighter mt-2">Designers que representam o Brasil</h2>
-        </div>
+        <ul class="nav-links">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Designer cards -->
-            <div class="fashion-card bg-white p-6 rounded-3xl border">
-                <img src="https://picsum.photos/id/1005/400/300" class="w-full h-48 object-cover rounded-2xl mb-5" alt="Alexandre Herchcovitch">
-                <h3 class="font-bold text-xl">Alexandre Herchcovitch</h3>
-                <p class="text-sm text-[#009739] font-medium mb-2">Avançado • Streetwear</p>
-                <p class="text-gray-600 text-sm">Um dos mais importantes designers brasileiros. Conhecido por criar peças inovadoras e trazer a cultura urbana brasileira para passarelas internacionais.</p>
-            </div>
-            
-            <div class="fashion-card bg-white p-6 rounded-3xl border">
-                <img src="https://picsum.photos/id/30/400/300" class="w-full h-48 object-cover rounded-2xl mb-5" alt="Lenny Niemeyer">
-                <h3 class="font-bold text-xl">Lenny Niemeyer</h3>
-                <p class="text-sm text-[#009739] font-medium mb-2">Beachwear de Luxo</p>
-                <p class="text-gray-600 text-sm">A rainha do maiô e biquíni brasileiro. Suas criações são vendidas em todo o mundo e representam o estilo leve e sofisticado do litoral brasileiro.</p>
-            </div>
-            
-            <div class="fashion-card bg-white p-6 rounded-3xl border">
-                <img src="https://picsum.photos/id/160/400/300" class="w-full h-48 object-cover rounded-2xl mb-5" alt="Osklen">
-                <h3 class="font-bold text-xl">Osklen (Oskar Metsavaht)</h3>
-                <p class="text-sm text-[#009739] font-medium mb-2">Moda Sustentável</p>
-                <p class="text-gray-600 text-sm">Pioneiro da moda ecológica no Brasil. Usa materiais orgânicos e inspirações da natureza brasileira. Uma das marcas mais sustentáveis do mundo.</p>
-            </div>
-            
-            <div class="fashion-card bg-white p-6 rounded-3xl border">
-                <img src="https://picsum.photos/id/201/400/300" class="w-full h-48 object-cover rounded-2xl mb-5" alt="Ronaldo Fraga">
-                <h3 class="font-bold text-xl">Ronaldo Fraga</h3>
-                <p class="text-sm text-[#009739] font-medium mb-2">Estampas e Cultura</p>
-                <p class="text-gray-600 text-sm">Mestre das estampas e referências culturais. Suas coleções contam histórias do Brasil com muito humor e beleza. Um dos mais criativos do país.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- ÍCONES -->
-    <section id="icones" class="bg-white py-20 border-t">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="text-[#009739] font-semibold">ROSTOS DO BRASIL NO MUNDO</span>
-                <h2 class="section-title text-5xl font-bold tracking-tighter mt-2">Ícones da Moda Brasileira</h2>
-            </div>
+            <li>
+                <a href="#introducao">
+                    Introdução
+                </a>
+            </li>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <img src="https://picsum.photos/id/1009/400/400" class="w-48 h-48 object-cover rounded-full mx-auto mb-5 shadow-xl border-4 border-[#FEDD00]" alt="Carmen Miranda">
-                    <h3 class="font-bold text-2xl">Carmen Miranda</h3>
-                    <p class="text-gray-600 mt-2">"A Pequena Notável". Levou o samba e o estilo brasileiro para Hollywood nos anos 40. Seu turbante de frutas virou símbolo mundial do Brasil.</p>
-                </div>
-                
-                <div class="text-center">
-                    <img src="https://picsum.photos/id/1006/400/400" class="w-48 h-48 object-cover rounded-full mx-auto mb-5 shadow-xl border-4 border-[#FEDD00]" alt="Gisele Bündchen">
-                    <h3 class="font-bold text-2xl">Gisele Bündchen</h3>
-                    <p class="text-gray-600 mt-2">A supermodelo brasileira mais famosa do mundo. Mudou a moda dos anos 2000 e abriu portas para muitas modelos brasileiras no mercado internacional.</p>
-                </div>
-                
-                <div class="text-center">
-                    <img src="https://picsum.photos/id/1012/400/400" class="w-48 h-48 object-cover rounded-full mx-auto mb-5 shadow-xl border-4 border-[#FEDD00]" alt="Adriana Lima">
-                    <h3 class="font-bold text-2xl">Adriana Lima</h3>
-                    <p class="text-gray-600 mt-2">Uma das modelos mais longevas e bem-sucedidas da história. Representa a beleza, força e elegância brasileira em campanhas mundiais.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CONCLUSÃO -->
-    <section class="max-w-5xl mx-auto px-6 py-20 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-5xl font-bold tracking-tighter mb-6">Conclusão</h2>
-            <p class="text-xl text-gray-600 leading-relaxed">
-                A moda brasileira é muito mais que roupas bonitas. Ela é cultura, história, diversidade e criatividade. 
-                O Brasil conseguiu transformar suas raízes em um estilo único que encanta o mundo inteiro.
+            <li>
+                <a href="#historia">
+                    História
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#tradicional">
+                    Estilos
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#contemporanea">
+                    Moda Atual
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#designers">
+                    Designers
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#icones">
+                    Ícones
+                </a>
+            </li>
+
+
+        </ul>
+
+
+
+
+        <a href="#contato" class="btn-download">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+
+            Projeto
+
+        </a>
+
+
+    </div>
+
+</nav>
+
+
+
+
+
+<!-- HERO -->
+
+
+<header class="hero">
+
+
+    <div class="hero-content">
+
+
+
+        <span class="badge">
+
+            ✨ Brasil • Cultura • Criatividade
+
+        </span>
+
+
+
+
+        <h1 class="title-font">
+
+            MODA<br>
+
+            BRASILEIRA
+
+        </h1>
+
+
+
+
+        <p>
+
+            Uma viagem pela história, cultura e criatividade
+            que conquistou o mundo.
+
+        </p>
+
+
+
+
+        <a href="#introducao" class="btn-primary">
+
+
+            Explorar Projeto
+
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+
+        </a>
+
+
+
+    </div>
+
+
+
+</header>
+<!-- INTRODUÇÃO -->
+
+
+<section id="introducao" class="reveal">
+
+
+    <div class="section-header">
+
+        <span>
+            DESDE 1500 ATÉ HOJE
+        </span>
+
+
+        <h2 class="section-title title-font">
+            O que é a Moda Brasileira?
+        </h2>
+
+
+    </div>
+
+
+
+
+    <div class="intro-grid">
+
+
+        <div class="intro-text">
+
+
+            <p>
+
+                A moda brasileira é uma das mais ricas e
+                diversas do mundo. Ela nasce da mistura de
+                povos indígenas, africanos, portugueses,
+                europeus e muitas outras culturas que formaram
+                a identidade do Brasil.
+
             </p>
-            <p class="mt-6 text-xl text-gray-600 leading-relaxed">
-                Seja nas fantasias do Carnaval, nas estampas de Ronaldo Fraga ou na elegância de Gisele Bündchen, 
-                a moda brasileira sempre carrega orgulho e identidade.
+
+
+            <p>
+
+                É uma moda colorida, criativa e cheia de
+                personalidade. Valoriza o clima tropical,
+                a diversidade cultural e transforma tradições
+                brasileiras em tendências reconhecidas
+                internacionalmente.
+
             </p>
-            
-            <div class="mt-10 inline-flex items-center gap-x-4 bg-[#009739] text-white px-8 py-4 rounded-2xl">
-                <i class="fas fa-heart text-2xl"></i>
-                <span class="font-semibold text-lg">Orgulho de ser brasileiro!</span>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="intro-image">
+
+
+            <img 
+            src="https://picsum.photos/id/1011/800/600"
+            alt="Moda brasileira e diversidade cultural">
+
+
+
+            <div class="intro-badge">
+
+
+                <i class="fa-solid fa-globe"></i>
+
+
+                <strong>
+                    Moda brasileira
+                </strong>
+
+
+                <p>
+                    Cultura que inspira o mundo
+                </p>
+
+
             </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer id="contato" class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-sm opacity-70">Projeto educacional sobre Moda Brasileira • 2026</p>
-            <p class="mt-2 text-xs opacity-50">Feito com carinho para celebrar a cultura brasileira</p>
-        </div>
-    </footer>
 
-    <script>
-        // Tailwind script
-        function initializeTailwind() {
-            document.documentElement.style.setProperty('--accent-green', '#009739');
-        }
-        
-        // Smooth scroll for all anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Initialize everything
-        window.onload = function() {
-            initializeTailwind();
-            
-            // Optional: Add a little animation to cards
-            const cards = document.querySelectorAll('.fashion-card');
-            cards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    card.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
-                    card.style.transitionDelay = (index * 80) + 'ms';
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, 300);
-            });
-        }
-    </script>
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- HISTÓRIA -->
+
+
+<section id="historia" class="reveal">
+
+
+    <div class="section-header">
+
+
+        <span>
+            LINHA DO TEMPO
+        </span>
+
+
+        <h2 class="section-title title-font">
+            História da Moda Brasileira
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="timeline">
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+                1
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Período Colonial (1500-1822)
+                </h3>
+
+
+                <p>
+
+                    Roupas portuguesas foram adaptadas
+                    ao clima tropical brasileiro.
+                    Tecidos leves, algodão, linho,
+                    além das influências indígenas
+                    com adornos naturais.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+                2
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Império do Brasil (1822-1889)
+                </h3>
+
+
+                <p>
+
+                    A corte brasileira recebeu forte
+                    influência francesa. Surgiram
+                    adaptações europeias para o clima
+                    brasileiro e as primeiras modistas.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+                3
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Século XX - Modernização
+                </h3>
+
+
+                <p>
+
+                    Carmen Miranda levou elementos
+                    brasileiros para Hollywood.
+                    O Tropicalismo trouxe cores,
+                    estampas e liberdade para a moda.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+                4
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Anos 1990 até hoje
+                </h3>
+
+
+                <p>
+
+                    A moda brasileira ganhou destaque
+                    mundial com modelos, designers e
+                    eventos como o São Paulo Fashion Week.
+                    Hoje existe uma forte valorização
+                    da sustentabilidade.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</section>
+<!-- ESTILOS TRADICIONAIS -->
+
+
+<section id="tradicional" class="reveal">
+
+
+    <div class="section-header">
+
+
+        <span>
+            IDENTIDADE CULTURAL
+        </span>
+
+
+        <h2 class="section-title title-font">
+            Estilos Tradicionais e Regionais
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="cards-grid">
+
+
+
+        <div class="fashion-card">
+
+
+            <img 
+            src="https://picsum.photos/id/160/600/340"
+            alt="Festa Junina">
+
+
+            <div class="fashion-card-content">
+
+
+                <h3>
+                    Festa Junina
+                </h3>
+
+
+                <p>
+
+                    Vestidos xadrez, chapéus de palha,
+                    rendas e cores vibrantes representam
+                    a cultura do interior brasileiro.
+                    Uma celebração cheia de tradição,
+                    música e identidade.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="fashion-card">
+
+
+            <img 
+            src="https://picsum.photos/id/201/600/340"
+            alt="Carnaval brasileiro">
+
+
+            <div class="fashion-card-content">
+
+
+                <h3>
+                    Carnaval do Rio
+                </h3>
+
+
+                <p>
+
+                    Fantasias com brilho, penas,
+                    cores e movimento transformam
+                    o Carnaval em uma das maiores
+                    expressões de moda e arte do mundo.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="fashion-card">
+
+
+            <img 
+            src="https://picsum.photos/id/251/600/340"
+            alt="Influência indígena">
+
+
+            <div class="fashion-card-content">
+
+
+                <h3>
+                    Influência Indígena
+                </h3>
+
+
+                <p>
+
+                    Elementos naturais, grafismos,
+                    sementes e fibras inspiram
+                    criações contemporâneas que
+                    valorizam a cultura originária.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- MODA CONTEMPORÂNEA -->
+
+
+<section id="contemporanea" class="contemporanea reveal">
+
+
+
+    <div class="intro-grid">
+
+
+
+        <div>
+
+
+            <span>
+                ATUALIDADE
+            </span>
+
+
+            <h2 class="title-font">
+                Moda Brasileira Hoje
+            </h2>
+
+
+
+            <p>
+
+                A moda brasileira atual mistura
+                tradição, inovação e sustentabilidade.
+                O país possui designers reconhecidos
+                internacionalmente e uma identidade
+                própria.
+
+            </p>
+
+
+
+            <p>
+
+                • São Paulo Fashion Week — um dos
+                maiores eventos de moda da América Latina.
+
+            </p>
+
+
+            <p>
+
+                • Moda sustentável — valorização de
+                materiais naturais e produção consciente.
+
+            </p>
+
+
+            <p>
+
+                • Estilo brasileiro — leve, colorido
+                e inspirado na diversidade cultural.
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div>
+
+
+            <img 
+            src="https://picsum.photos/id/29/800/600"
+            alt="Moda contemporânea brasileira">
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- DESIGNERS -->
+
+
+<section id="designers" class="reveal">
+
+
+    <div class="section-header">
+
+
+        <span>
+            TALENTOS BRASILEIROS
+        </span>
+
+
+        <h2 class="section-title title-font">
+            Designers que representam o Brasil
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="designers-grid">
+
+
+
+
+
+
+        <div class="designer-card">
+
+
+            <img 
+            src="https://picsum.photos/id/1005/400/300"
+            alt="Alexandre Herchcovitch">
+
+
+            <h3>
+                Alexandre Herchcovitch
+            </h3>
+
+
+            <p class="role">
+                Streetwear e inovação
+            </p>
+
+
+            <p>
+
+                Conhecido por suas criações
+                ousadas e por levar elementos
+                urbanos brasileiros para
+                passarelas internacionais.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="designer-card">
+
+
+            <img 
+            src="https://picsum.photos/id/30/400/300"
+            alt="Lenny Niemeyer">
+
+
+            <h3>
+                Lenny Niemeyer
+            </h3>
+
+
+            <p class="role">
+                Beachwear de luxo
+            </p>
+
+
+            <p>
+
+                Referência mundial em moda praia.
+                Suas criações representam a
+                elegância e o estilo tropical
+                brasileiro.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="designer-card">
+
+
+            <img 
+            src="https://picsum.photos/id/160/400/300"
+            alt="Oskar Metsavaht">
+
+
+            <h3>
+                Osklen
+            </h3>
+
+
+            <p class="role">
+                Moda sustentável
+            </p>
+
+
+            <p>
+
+                Marca reconhecida pela união
+                entre design, natureza e
+                responsabilidade ambiental.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="designer-card">
+
+
+            <img 
+            src="https://picsum.photos/id/201/400/300"
+            alt="Ronaldo Fraga">
+
+
+            <h3>
+                Ronaldo Fraga
+            </h3>
+
+
+            <p class="role">
+                Cultura e estampas
+            </p>
+
+
+            <p>
+
+                Suas coleções contam histórias
+                brasileiras através de cores,
+                arte e referências culturais.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</section>
+<!-- ÍCONES DA MODA -->
+
+
+<section id="icones" class="reveal">
+
+
+    <div class="section-header">
+
+
+        <span>
+            ROSTOS DO BRASIL NO MUNDO
+        </span>
+
+
+        <h2 class="section-title title-font">
+            Ícones da Moda Brasileira
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="icones-grid">
+
+
+
+        <div class="icone">
+
+
+            <img 
+            src="https://picsum.photos/id/1009/400/400"
+            alt="Carmen Miranda">
+
+
+            <h3>
+                Carmen Miranda
+            </h3>
+
+
+            <p>
+
+                A Pequena Notável levou o samba,
+                as cores brasileiras e seu estilo
+                marcante para Hollywood.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="icone">
+
+
+            <img 
+            src="https://picsum.photos/id/1006/400/400"
+            alt="Gisele Bündchen">
+
+
+            <h3>
+                Gisele Bündchen
+            </h3>
+
+
+            <p>
+
+                Uma das modelos brasileiras mais
+                famosas do mundo, símbolo de
+                elegância e influência internacional.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="icone">
+
+
+            <img 
+            src="https://picsum.photos/id/1012/400/400"
+            alt="Adriana Lima">
+
+
+            <h3>
+                Adriana Lima
+            </h3>
+
+
+            <p>
+
+                Representa a beleza brasileira
+                em grandes campanhas e
+                passarelas internacionais.
+
+            </p>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONCLUSÃO -->
+
+
+<section class="reveal">
+
+
+    <div class="conclusao">
+
+
+        <h2>
+            Conclusão
+        </h2>
+
+
+        <p>
+
+            A moda brasileira é muito mais que
+            roupas bonitas. Ela representa cultura,
+            história, criatividade e a diversidade
+            de um povo.
+
+        </p>
+
+
+        <p>
+
+            Das tradições indígenas às grandes
+            passarelas internacionais, o Brasil
+            criou uma identidade única que
+            continua encantando o mundo.
+
+        </p>
+
+
+
+
+        <div class="badge-final">
+
+
+            <i class="fa-solid fa-heart"></i>
+
+
+            Orgulho de ser brasileiro!
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer id="contato">
+
+
+    <p>
+
+        Projeto educacional sobre Moda Brasileira • 2026
+
+    </p>
+
+
+    <p>
+
+        Feito para celebrar cultura,
+        criatividade e identidade brasileira.
+
+    </p>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+/* BARRA DE PROGRESSO */
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+
+    let altura =
+    document.documentElement.scrollHeight
+    -
+    document.documentElement.clientHeight;
+
+
+    let progresso =
+    (window.scrollY / altura) * 100;
+
+
+
+    document.getElementById(
+        "progress"
+    ).style.width =
+    progresso + "%";
+
+
+});
+
+
+
+
+
+
+/* ANIMAÇÃO AO ROLAR */
+
+
+const elementos =
+document.querySelectorAll(".reveal");
+
+
+
+const observer =
+new IntersectionObserver(
+(entries)=>{
+
+
+entries.forEach(
+(entry)=>{
+
+
+    if(entry.isIntersecting){
+
+
+        entry.target.classList.add(
+            "active"
+        );
+
+
+    }
+
+
+});
+
+
+},
+{
+    threshold:.15
+});
+
+
+
+
+
+elementos.forEach(
+(elemento)=>{
+
+
+    observer.observe(elemento);
+
+
+});
+
+
+
+
+
+
+/* SCROLL SUAVE */
+
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(
+(link)=>{
+
+
+link.addEventListener(
+"click",
+function(e){
+
+
+    e.preventDefault();
+
+
+    document
+    .querySelector(
+        this.getAttribute("href")
+    )
+    .scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
 </body>
+
 </html>
