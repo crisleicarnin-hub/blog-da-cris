@@ -49,7 +49,7 @@ nav a:hover {
 
 /* Hero */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?fashion,magazine') center/cover no-repeat;
+    background: url('images/hero.jpg') center/cover no-repeat;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -120,21 +120,4 @@ nav a:hover {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    padding: 1rem;
-    font-size: 1.2rem;
-}
-
-.card p
+    transition: transform 0.
