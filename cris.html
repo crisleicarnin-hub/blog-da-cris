@@ -7,29 +7,34 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Moda Brasileira - Uma Viagem Cultural</title>
+    <title>Projeto: Moda Brasileira - Uma Viagem Cultural</title>
 
 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <link rel="stylesheet"
+    <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap');
+
+    </style>
 
 
 </head>
 
 
-<body>
 
-
-<!-- BARRA DE PROGRESSO -->
-
-<div id="progress"></div>
+<body class="bg-gray-50 text-gray-800">
 
 
 
 <!-- NAVBAR -->
+
 
 <nav>
 
@@ -41,7 +46,7 @@
 
             <div class="logo-circle">
 
-                ✿
+                🇧🇷
 
             </div>
 
@@ -52,7 +57,6 @@
                     Moda Brasileira
                 </h1>
 
-
                 <p>
                     Projeto Cultural
                 </p>
@@ -61,6 +65,7 @@
 
 
         </div>
+
 
 
 
@@ -83,7 +88,7 @@
 
             <li>
                 <a href="#tradicional">
-                    Estilos
+                    Estilos Tradicionais
                 </a>
             </li>
 
@@ -114,18 +119,22 @@
 
 
 
+
         <a href="#contato" class="btn-download">
 
-            <i class="fa-solid fa-file-arrow-down"></i>
+            <i class="fas fa-download"></i>
 
-            Projeto
+            Baixar Projeto
 
         </a>
 
 
+
     </div>
 
+
 </nav>
+
 
 
 
@@ -141,19 +150,9 @@
 
 
 
-        <span class="badge">
-
-            ✨ Brasil • Cultura • Criatividade
-
-        </span>
-
-
-
-
         <h1 class="title-font">
 
             MODA<br>
-
             BRASILEIRA
 
         </h1>
@@ -171,16 +170,21 @@
 
 
 
-        <a href="#introducao" class="btn-primary">
+
+        <div class="hero-buttons">
 
 
-            Explorar Projeto
+            <a href="#introducao" class="btn-primary">
+
+                Explorar o Projeto
+
+                <i class="fas fa-arrow-down"></i>
+
+            </a>
 
 
-            <i class="fa-solid fa-arrow-down"></i>
+        </div>
 
-
-        </a>
 
 
 
@@ -192,22 +196,24 @@
 <!-- INTRODUÇÃO -->
 
 
-<section id="introducao" class="reveal">
+<section id="introducao">
 
 
     <div class="section-header">
+
 
         <span>
             DESDE 1500 ATÉ HOJE
         </span>
 
 
-        <h2 class="section-title title-font">
+        <h2 class="title-font">
             O que é a Moda Brasileira?
         </h2>
 
 
     </div>
+
 
 
 
@@ -222,23 +228,23 @@
 
                 A moda brasileira é uma das mais ricas e
                 diversas do mundo. Ela nasce da mistura de
-                povos indígenas, africanos, portugueses,
-                europeus e muitas outras culturas que formaram
-                a identidade do Brasil.
+                povos indígenas, africanos escravizados,
+                portugueses, italianos, alemães, japoneses
+                e muitos outros que chegaram ao Brasil.
 
             </p>
+
 
 
             <p>
 
-                É uma moda colorida, criativa e cheia de
-                personalidade. Valoriza o clima tropical,
-                a diversidade cultural e transforma tradições
-                brasileiras em tendências reconhecidas
-                internacionalmente.
+                É uma moda colorida, alegre, criativa e que
+                valoriza o corpo, o clima tropical e a
+                identidade cultural. O Brasil não copia
+                tendências — ele cria seu próprio estilo
+                e exporta para o mundo inteiro.
 
             </p>
-
 
 
         </div>
@@ -252,23 +258,107 @@
 
             <img 
             src="https://picsum.photos/id/1011/800/600"
-            alt="Moda brasileira e diversidade cultural">
+            alt="Diversidade da moda brasileira">
+
+
 
 
 
             <div class="intro-badge">
 
 
-                <i class="fa-solid fa-globe"></i>
+                <i class="fas fa-globe"></i>
 
 
                 <strong>
-                    Moda brasileira
+                    5º maior mercado
+                </strong>
+
+
+<!-- INTRODUÇÃO -->
+
+
+<section id="introducao">
+
+
+    <div class="section-header">
+
+
+        <span>
+            DESDE 1500 ATÉ HOJE
+        </span>
+
+
+        <h2 class="title-font">
+            O que é a Moda Brasileira?
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="intro-grid">
+
+
+        <div class="intro-text">
+
+
+            <p>
+
+                A moda brasileira é uma das mais ricas e
+                diversas do mundo. Ela nasce da mistura de
+                povos indígenas, africanos escravizados,
+                portugueses, italianos, alemães, japoneses
+                e muitos outros que chegaram ao Brasil.
+
+            </p>
+
+
+
+            <p>
+
+                É uma moda colorida, alegre, criativa e que
+                valoriza o corpo, o clima tropical e a
+                identidade cultural. O Brasil não copia
+                tendências — ele cria seu próprio estilo
+                e exporta para o mundo inteiro.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="intro-image">
+
+
+            <img 
+            src="https://picsum.photos/id/1011/800/600"
+            alt="Diversidade da moda brasileira">
+
+
+
+
+
+            <div class="intro-badge">
+
+
+                <i class="fas fa-globe"></i>
+
+
+                <strong>
+                    5º maior mercado
                 </strong>
 
 
                 <p>
-                    Cultura que inspira o mundo
+                    de moda do mundo
                 </p>
 
 
@@ -283,7 +373,10 @@
     </div>
 
 
+
 </section>
+
+
 
 
 
@@ -295,7 +388,7 @@
 <!-- HISTÓRIA -->
 
 
-<section id="historia" class="reveal">
+<section id="historia">
 
 
     <div class="section-header">
@@ -306,7 +399,7 @@
         </span>
 
 
-        <h2 class="section-title title-font">
+        <h2 class="title-font">
             História da Moda Brasileira
         </h2>
 
@@ -317,9 +410,8 @@
 
 
 
+
     <div class="timeline">
-
-
 
 
 
@@ -327,7 +419,9 @@
 
 
             <div class="timeline-dot">
+
                 1
+
             </div>
 
 
@@ -341,16 +435,201 @@
 
                 <p>
 
-                    Roupas portuguesas foram adaptadas
-                    ao clima tropical brasileiro.
-                    Tecidos leves, algodão, linho,
-                    além das influências indígenas
-                    com adornos naturais.
+                    Roupas portuguesas pesadas foram
+                    adaptadas ao calor tropical. Tecidos
+                    leves de algodão e linho surgiram.
+                    Também houve influência indígena com
+                    redes e adornos de penas.
 
                 </p>
 
 
             </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+<!-- INTRODUÇÃO -->
+
+
+<section id="introducao">
+
+
+    <div class="section-header">
+
+
+        <span>
+            DESDE 1500 ATÉ HOJE
+        </span>
+
+
+        <h2 class="title-font">
+            O que é a Moda Brasileira?
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="intro-grid">
+
+
+        <div class="intro-text">
+
+
+            <p>
+
+                A moda brasileira é uma das mais ricas e
+                diversas do mundo. Ela nasce da mistura de
+                povos indígenas, africanos escravizados,
+                portugueses, italianos, alemães, japoneses
+                e muitos outros que chegaram ao Brasil.
+
+            </p>
+
+
+
+            <p>
+
+                É uma moda colorida, alegre, criativa e que
+                valoriza o corpo, o clima tropical e a
+                identidade cultural. O Brasil não copia
+                tendências — ele cria seu próprio estilo
+                e exporta para o mundo inteiro.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="intro-image">
+
+
+            <img 
+            src="https://picsum.photos/id/1011/800/600"
+            alt="Diversidade da moda brasileira">
+
+
+
+
+
+            <div class="intro-badge">
+
+
+                <i class="fas fa-globe"></i>
+
+
+                <strong>
+                    5º maior mercado
+                </strong>
+
+
+                <p>
+                    de moda do mundo
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- HISTÓRIA -->
+
+
+<section id="historia">
+
+
+    <div class="section-header">
+
+
+        <span>
+            LINHA DO TEMPO
+        </span>
+
+
+        <h2 class="title-font">
+            História da Moda Brasileira
+        </h2>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="timeline">
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                1
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Período Colonial (1500-1822)
+                </h3>
+
+
+                <p>
+
+                    Roupas portuguesas pesadas foram
+                    adaptadas ao calor tropical. Tecidos
+                    leves de algodão e linho surgiram.
+                    Também houve influência indígena com
+                    redes e adornos de penas.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
 
 
         </div>
@@ -365,7 +644,9 @@
 
 
             <div class="timeline-dot">
+
                 2
+
             </div>
 
 
@@ -379,15 +660,18 @@
 
                 <p>
 
-                    A corte brasileira recebeu forte
-                    influência francesa. Surgiram
-                    adaptações europeias para o clima
+                    A influência francesa ganhou força.
+                    A corte utilizava roupas europeias,
+                    mas surgiram adaptações para o clima
                     brasileiro e as primeiras modistas.
 
                 </p>
 
 
             </div>
+
+
+            <div class="timeline-line"></div>
 
 
         </div>
@@ -402,7 +686,9 @@
 
 
             <div class="timeline-dot">
+
                 3
+
             </div>
 
 
@@ -416,10 +702,10 @@
 
                 <p>
 
-                    Carmen Miranda levou elementos
-                    brasileiros para Hollywood.
-                    O Tropicalismo trouxe cores,
-                    estampas e liberdade para a moda.
+                    Carmen Miranda levou elementos do
+                    estilo brasileiro para Hollywood.
+                    O Tropicalismo trouxe cores, estampas
+                    e liberdade para a moda.
 
                 </p>
 
@@ -427,8 +713,10 @@
             </div>
 
 
-        </div>
+            <div class="timeline-line"></div>
 
+
+        </div>
 
 
 
@@ -440,7 +728,9 @@
 
 
             <div class="timeline-dot">
+
                 4
+
             </div>
 
 
@@ -455,10 +745,9 @@
                 <p>
 
                     A moda brasileira ganhou destaque
-                    mundial com modelos, designers e
-                    eventos como o São Paulo Fashion Week.
-                    Hoje existe uma forte valorização
-                    da sustentabilidade.
+                    internacional com modelos, designers
+                    e eventos como o São Paulo Fashion Week.
+                    Hoje existe valorização da sustentabilidade.
 
                 </p>
 
@@ -470,6 +759,355 @@
 
 
 
+    </div>
+
+
+
+</section>
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                2
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Império do Brasil (1822-1889)
+                </h3>
+
+
+                <p>
+
+                    A influência francesa ganhou força.
+                    A corte utilizava roupas europeias,
+                    mas surgiram adaptações para o clima
+                    brasileiro e as primeiras modistas.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                3
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Século XX - Modernização
+                </h3>
+
+
+                <p>
+
+                    Carmen Miranda levou elementos do
+                    estilo brasileiro para Hollywood.
+                    O Tropicalismo trouxe cores, estampas
+                    e liberdade para a moda.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                4
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Anos 1990 até hoje
+                </h3>
+
+
+                <p>
+
+                    A moda brasileira ganhou destaque
+                    internacional com modelos, designers
+                    e eventos como o São Paulo Fashion Week.
+                    Hoje existe valorização da sustentabilidade.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+                <p>
+                    de moda do mundo
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- HISTÓRIA -->
+
+
+<section id="historia">
+
+
+    <div class="section-header">
+
+
+        <span>
+            LINHA DO TEMPO
+        </span>
+
+
+        <h2 class="title-font">
+            História da Moda Brasileira
+        </h2>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="timeline">
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                1
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Período Colonial (1500-1822)
+                </h3>
+
+
+                <p>
+
+                    Roupas portuguesas pesadas foram
+                    adaptadas ao calor tropical. Tecidos
+                    leves de algodão e linho surgiram.
+                    Também houve influência indígena com
+                    redes e adornos de penas.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                2
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Império do Brasil (1822-1889)
+                </h3>
+
+
+                <p>
+
+                    A influência francesa ganhou força.
+                    A corte utilizava roupas europeias,
+                    mas surgiram adaptações para o clima
+                    brasileiro e as primeiras modistas.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                3
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Século XX - Modernização
+                </h3>
+
+
+                <p>
+
+                    Carmen Miranda levou elementos do
+                    estilo brasileiro para Hollywood.
+                    O Tropicalismo trouxe cores, estampas
+                    e liberdade para a moda.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="timeline-item">
+
+
+            <div class="timeline-dot">
+
+                4
+
+            </div>
+
+
+            <div class="timeline-content">
+
+
+                <h3>
+                    Anos 1990 até hoje
+                </h3>
+
+
+                <p>
+
+                    A moda brasileira ganhou destaque
+                    internacional com modelos, designers
+                    e eventos como o São Paulo Fashion Week.
+                    Hoje existe valorização da sustentabilidade.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
 
     </div>
 
@@ -479,7 +1117,7 @@
 <!-- ESTILOS TRADICIONAIS -->
 
 
-<section id="tradicional" class="reveal">
+<section id="tradicional">
 
 
     <div class="section-header">
@@ -490,7 +1128,7 @@
         </span>
 
 
-        <h2 class="section-title title-font">
+        <h2 class="title-font">
             Estilos Tradicionais e Regionais
         </h2>
 
@@ -513,6 +1151,7 @@
             alt="Festa Junina">
 
 
+
             <div class="fashion-card-content">
 
 
@@ -523,11 +1162,10 @@
 
                 <p>
 
-                    Vestidos xadrez, chapéus de palha,
-                    rendas e cores vibrantes representam
-                    a cultura do interior brasileiro.
-                    Uma celebração cheia de tradição,
-                    música e identidade.
+                    Vestidos xadrez coloridos,
+                    chapéus de palha, lenços e botas.
+                    Representa o interior do Brasil e
+                    suas festas cheias de alegria.
 
                 </p>
 
@@ -542,13 +1180,13 @@
 
 
 
-
         <div class="fashion-card">
 
 
             <img 
             src="https://picsum.photos/id/201/600/340"
-            alt="Carnaval brasileiro">
+            alt="Carnaval">
+
 
 
             <div class="fashion-card-content">
@@ -561,10 +1199,9 @@
 
                 <p>
 
-                    Fantasias com brilho, penas,
-                    cores e movimento transformam
-                    o Carnaval em uma das maiores
-                    expressões de moda e arte do mundo.
+                    Fantasias com penas, brilho,
+                    lantejoulas e muito movimento.
+                    Uma mistura de arte, dança e moda.
 
                 </p>
 
@@ -580,13 +1217,13 @@
 
 
 
-
         <div class="fashion-card">
 
 
             <img 
             src="https://picsum.photos/id/251/600/340"
-            alt="Influência indígena">
+            alt="Influência Indígena">
+
 
 
             <div class="fashion-card-content">
@@ -599,10 +1236,9 @@
 
                 <p>
 
-                    Elementos naturais, grafismos,
-                    sementes e fibras inspiram
-                    criações contemporâneas que
-                    valorizam a cultura originária.
+                    Padrões geométricos, fibras naturais,
+                    sementes e elementos da natureza
+                    brasileira inspiram muitos designers.
 
                 </p>
 
@@ -617,7 +1253,9 @@
     </div>
 
 
+
 </section>
+
 
 
 
@@ -629,8 +1267,7 @@
 <!-- MODA CONTEMPORÂNEA -->
 
 
-<section id="contemporanea" class="contemporanea reveal">
-
+<section id="contemporanea">
 
 
     <div class="intro-grid">
@@ -640,9 +1277,10 @@
         <div>
 
 
-            <span>
+            <span class="highlight">
                 ATUALIDADE
             </span>
+
 
 
             <h2 class="title-font">
@@ -651,13 +1289,11 @@
 
 
 
+
             <p>
 
-                A moda brasileira atual mistura
-                tradição, inovação e sustentabilidade.
-                O país possui designers reconhecidos
-                internacionalmente e uma identidade
-                própria.
+                • São Paulo Fashion Week (SPFW) —
+                um dos maiores eventos de moda da América Latina.
 
             </p>
 
@@ -665,31 +1301,33 @@
 
             <p>
 
-                • São Paulo Fashion Week — um dos
-                maiores eventos de moda da América Latina.
+                • Moda Sustentável —
+                valorização de materiais ecológicos.
 
             </p>
 
 
+
             <p>
 
-                • Moda sustentável — valorização de
-                materiais naturais e produção consciente.
+                • Estilo Carioca —
+                leve, colorido e confortável.
 
             </p>
 
 
+
             <p>
 
-                • Estilo brasileiro — leve, colorido
-                e inspirado na diversidade cultural.
+                • Exportação —
+                peças brasileiras conquistam mercados
+                internacionais.
 
             </p>
 
 
 
         </div>
-
 
 
 
@@ -704,6 +1342,7 @@
 
 
         </div>
+
 
 
 
@@ -724,7 +1363,7 @@
 <!-- DESIGNERS -->
 
 
-<section id="designers" class="reveal">
+<section id="designers">
 
 
     <div class="section-header">
@@ -735,12 +1374,14 @@
         </span>
 
 
-        <h2 class="section-title title-font">
+        <h2 class="title-font">
             Designers que representam o Brasil
         </h2>
 
 
     </div>
+
+
 
 
 
@@ -767,22 +1408,19 @@
 
 
             <p class="role">
-                Streetwear e inovação
+                Streetwear
             </p>
 
 
             <p>
 
-                Conhecido por suas criações
-                ousadas e por levar elementos
-                urbanos brasileiros para
-                passarelas internacionais.
+                Designer brasileiro conhecido por
+                peças inovadoras e influência urbana.
 
             </p>
 
 
         </div>
-
 
 
 
@@ -804,22 +1442,19 @@
 
 
             <p class="role">
-                Beachwear de luxo
+                Beachwear de Luxo
             </p>
 
 
             <p>
 
-                Referência mundial em moda praia.
-                Suas criações representam a
-                elegância e o estilo tropical
-                brasileiro.
+                Representa o estilo sofisticado
+                da moda praia brasileira.
 
             </p>
 
 
         </div>
-
 
 
 
@@ -841,21 +1476,19 @@
 
 
             <p class="role">
-                Moda sustentável
+                Moda Sustentável
             </p>
 
 
             <p>
 
-                Marca reconhecida pela união
-                entre design, natureza e
-                responsabilidade ambiental.
+                Marca brasileira conhecida por
+                unir moda, natureza e sustentabilidade.
 
             </p>
 
 
         </div>
-
 
 
 
@@ -877,15 +1510,14 @@
 
 
             <p class="role">
-                Cultura e estampas
+                Cultura e Estampas
             </p>
 
 
             <p>
 
                 Suas coleções contam histórias
-                brasileiras através de cores,
-                arte e referências culturais.
+                da cultura brasileira.
 
             </p>
 
@@ -901,10 +1533,10 @@
 
 
 </section>
-<!-- ÍCONES DA MODA -->
+<!-- ÍCONES -->
 
 
-<section id="icones" class="reveal">
+<section id="icones">
 
 
     <div class="section-header">
@@ -915,7 +1547,7 @@
         </span>
 
 
-        <h2 class="section-title title-font">
+        <h2 class="title-font">
             Ícones da Moda Brasileira
         </h2>
 
@@ -1007,15 +1639,13 @@
 
             <p>
 
-                Representa a beleza brasileira
-                em grandes campanhas e
-                passarelas internacionais.
+                Uma das modelos brasileiras mais
+                reconhecidas mundialmente.
 
             </p>
 
 
         </div>
-
 
 
 
@@ -1036,33 +1666,34 @@
 <!-- CONCLUSÃO -->
 
 
-<section class="reveal">
+<section>
 
 
     <div class="conclusao">
 
 
-        <h2>
+        <h2 class="title-font">
+
             Conclusão
+
         </h2>
+
 
 
         <p>
 
-            A moda brasileira é muito mais que
-            roupas bonitas. Ela representa cultura,
-            história, criatividade e a diversidade
-            de um povo.
+            A moda brasileira é muito mais que roupas
+            bonitas. Ela representa cultura, história,
+            diversidade e criatividade.
 
         </p>
 
 
+
         <p>
 
-            Das tradições indígenas às grandes
-            passarelas internacionais, o Brasil
-            criou uma identidade única que
-            continua encantando o mundo.
+            O Brasil transformou suas raízes em um
+            estilo único que encanta o mundo inteiro.
 
         </p>
 
@@ -1072,7 +1703,7 @@
         <div class="badge-final">
 
 
-            <i class="fa-solid fa-heart"></i>
+            <i class="fas fa-heart"></i>
 
 
             Orgulho de ser brasileiro!
@@ -1082,7 +1713,9 @@
 
 
 
+
     </div>
+
 
 
 </section>
@@ -1110,8 +1743,7 @@
 
     <p>
 
-        Feito para celebrar cultura,
-        criatividade e identidade brasileira.
+        Feito para celebrar a cultura brasileira.
 
     </p>
 
@@ -1130,116 +1762,31 @@
 <script>
 
 
-/* BARRA DE PROGRESSO */
-
-
-window.addEventListener(
-"scroll",
-function(){
-
-
-    let altura =
-    document.documentElement.scrollHeight
-    -
-    document.documentElement.clientHeight;
-
-
-    let progresso =
-    (window.scrollY / altura) * 100;
-
-
-
-    document.getElementById(
-        "progress"
-    ).style.width =
-    progresso + "%";
-
-
-});
-
-
-
-
-
-
-/* ANIMAÇÃO AO ROLAR */
-
-
-const elementos =
-document.querySelectorAll(".reveal");
-
-
-
-const observer =
-new IntersectionObserver(
-(entries)=>{
-
-
-entries.forEach(
-(entry)=>{
-
-
-    if(entry.isIntersecting){
-
-
-        entry.target.classList.add(
-            "active"
-        );
-
-
-    }
-
-
-});
-
-
-},
-{
-    threshold:.15
-});
-
-
-
-
-
-elementos.forEach(
-(elemento)=>{
-
-
-    observer.observe(elemento);
-
-
-});
-
-
-
-
-
-
-/* SCROLL SUAVE */
-
+// Scroll suave nos links
 
 document
 .querySelectorAll('a[href^="#"]')
-.forEach(
-(link)=>{
+.forEach(anchor => {
 
 
-link.addEventListener(
-"click",
-function(e){
+    anchor.addEventListener(
+    'click',
+    function(e){
 
 
-    e.preventDefault();
+        e.preventDefault();
 
 
-    document
-    .querySelector(
-        this.getAttribute("href")
-    )
-    .scrollIntoView({
+        document
+        .querySelector(
+            this.getAttribute('href')
+        )
+        .scrollIntoView({
 
-        behavior:"smooth"
+            behavior: "smooth"
+
+        });
+
 
     });
 
@@ -1247,11 +1794,62 @@ function(e){
 });
 
 
-});
+
+
+
+// Animação simples dos cards
+
+
+window.onload = () => {
+
+
+    const cards =
+    document.querySelectorAll(
+        ".fashion-card, .designer-card"
+    );
+
+
+    cards.forEach(
+    (card,index)=>{
+
+
+        card.style.opacity="0";
+
+
+        card.style.transform=
+        "translateY(20px)";
+
+
+
+        setTimeout(()=>{
+
+
+            card.style.transition=
+            "0.6s ease";
+
+
+            card.style.opacity="1";
+
+
+            card.style.transform=
+            "translateY(0)";
+
+
+
+        }, index * 100);
+
+
+
+    });
+
+
+
+};
 
 
 
 </script>
+
 
 
 </body>
