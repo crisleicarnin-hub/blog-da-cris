@@ -1,104 +1,1570 @@
+/* ==========================
+   RESET E CONFIGURAÇÕES GERAIS
+========================== */
+
+
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
-   font-family: Arial, sans-serif;
-   color: #333;
+
+    background: #faf8f5;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-header {
-   background-color: #8B0000;
-   color: #F5F5DC;
-   padding: 20px 40px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+
+h1, h2, h3 {
+
+    font-family: 'Playfair Display', serif;
+
 }
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+img {
+
+    width: 100%;
+    display: block;
+
+}
+
+
+section {
+
+    padding: 120px 8%;
+
+}
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 8%;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.75);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
 
 .logo {
-   font-size: 28px;
-   font-weight: bold;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    letter-spacing: 5px;
+
+    font-weight: 700;
+
 }
 
-nav a {
-   color: #F5F5DC;
-   margin-left: 30px;
-   text-decoration: none;
+
+
+.menu {
+
+    display: flex;
+
+    gap: 35px;
+
 }
+
+
+
+.menu a {
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    position: relative;
+
+}
+
+
+
+.menu a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 1px;
+
+    background: #b08d57;
+
+    transition: .4s;
+
+}
+
+
+
+.menu a:hover::after {
+
+    width: 100%;
+
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
 
 .hero {
-   background: linear-gradient(135deg, #8B0000, #A52A2A);
-   color: #F5F5DC;
-   padding: 80px 40px;
-   text-align: center;
+
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
 }
+
+
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.45)
+    ),
+
+    url("images/banner.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 750px;
+
+}
+
+
+
+.subtitle {
+
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
 
 .hero h1 {
-   font-size: 48px;
-   margin-bottom: 15px;
+
+    font-size: clamp(45px, 6vw, 85px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+
 }
 
-.hero button {
-   background-color: #F5F5DC;
-   color: #8B0000;
-   padding: 12px 30px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   font-weight: bold;
-   margin-top: 20px;
+
+
+.description {
+
+    max-width: 500px;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 45px;
+
 }
 
-.colecao {
-   padding: 60px 40px;
-   background-color: #F5F5DC;
-   text-align: center;
+
+
+.button {
+
+
+    display: inline-block;
+
+    padding: 18px 45px;
+
+    background: white;
+
+    color: #111;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    transition: .4s;
+
 }
 
-.colecao h2 {
-   color: #8B0000;
-   margin-bottom: 40px;
-   font-size: 36px;
+
+
+.button:hover {
+
+    background: #b08d57;
+
+    color: white;
+
+}
+/* ==========================
+   INTRODUÇÃO
+========================== */
+
+
+.intro {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
 }
 
-.produtos {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 30px;
+
+
+.intro-text span,
+.section-title span,
+.sustainable-content span,
+.contact-text span {
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: #a27b45;
+
+    text-transform: uppercase;
+
 }
 
-.produto {
-   background: white;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+
+.intro-text h2 {
+
+    font-size: clamp(35px, 4vw, 55px);
+
+    line-height: 1.2;
+
+    margin: 25px 0;
+
+    font-weight: 500;
+
 }
 
-.imagem {
-   width: 100%;
-   height: 200px;
-   background: #8B0000;
-   border-radius: 5px;
+
+
+.intro-text p {
+
+    line-height: 2;
+
+    color: #555;
+
+    max-width: 550px;
+
 }
 
-.produto h3 {
-   color: #8B0000;
-   margin-top: 15px;
+
+
+.intro-image {
+
+    position: relative;
+
 }
 
-.sobre {
-   background-color: #8B0000;
-   color: #F5F5DC;
-   padding: 60px 40px;
-   text-align: center;
+
+
+.intro-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 80%;
+
+    height: 80%;
+
+    border: 1px solid #b08d57;
+
+    right: -25px;
+
+    bottom: -25px;
+
+    z-index: -1;
+
 }
 
-footer {
-   background-color: #333;
-   color: #F5F5DC;
-   text-align: center;
-   padding: 20px;
+
+
+.intro-image img {
+
+    height: 650px;
+
+    object-fit: cover;
+
+}
+
+
+
+
+
+/* ==========================
+   TÍTULOS DAS SEÇÕES
+========================== */
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.section-title h2 {
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    font-weight: 500;
+
+    margin-top: 20px;
+
+}
+
+
+
+.section-title p {
+
+    max-width: 600px;
+
+    margin: 25px auto;
+
+    color: #666;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+/* ==========================
+   EDITORIAL
+========================== */
+
+
+.editorial {
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+
+.editorial-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+}
+
+
+
+.fashion-card {
+
+    background: #1c1c1c;
+
+    overflow: hidden;
+
+    transition: .5s;
+
+}
+
+
+
+.fashion-card:hover {
+
+    transform: translateY(-15px);
+
+}
+
+
+
+.fashion-card img {
+
+    height: 480px;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+
+.fashion-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+.card-text {
+
+    padding: 35px;
+
+}
+
+
+
+.card-text h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+}
+
+
+
+.card-text p {
+
+    color: #cfcfcf;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+/* ==========================
+   TENDÊNCIAS
+========================== */
+
+
+.trends {
+
+    background: #faf8f5;
+
+}
+
+
+
+.trend-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 40px;
+
+}
+
+
+
+.trend-box {
+
+    padding: 45px 35px;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    transition: .4s;
+
+}
+
+
+
+.trend-box:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+.number {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 50px;
+
+    color: #b08d57;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.trend-box h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.trend-box p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+}
+/* ==========================
+   HISTÓRIA DA MODA
+========================== */
+
+
+.history {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+
+.history-image {
+
+    position: relative;
+
+}
+
+
+
+.history-image img {
+
+    height: 700px;
+
+    object-fit: cover;
+
+}
+
+
+
+.history-text h2 {
+
+    font-size: clamp(40px,5vw,65px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    margin: 25px 0 50px;
+
+}
+
+
+
+.timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+}
+
+
+
+.timeline-item {
+
+    border-left: 1px solid #b08d57;
+
+    padding-left: 30px;
+
+}
+
+
+
+.timeline-item h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.timeline-item p {
+
+    color: #ccc;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+/* ==========================
+   SUSTENTABILIDADE
+========================== */
+
+
+.sustainable {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+
+.sustainable-content h2 {
+
+    font-size: clamp(40px,5vw,65px);
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin: 25px 0;
+
+}
+
+
+
+.sustainable-content p {
+
+    color: #555;
+
+    line-height: 2;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.button-dark {
+
+    display: inline-block;
+
+    padding: 18px 40px;
+
+    background: #111;
+
+    color: white;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    transition: .4s;
+
+}
+
+
+
+.button-dark:hover {
+
+    background: #b08d57;
+
+}
+
+
+
+.sustainable-gallery {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+
+.sustainable-gallery img {
+
+    height: 500px;
+
+    object-fit: cover;
+
+}
+
+
+
+.sustainable-gallery img:nth-child(2) {
+
+    margin-top: 80px;
+
+}
+
+
+
+
+
+/* ==========================
+   GRANDES ESTILISTAS
+========================== */
+
+
+.designers {
+
+    background: #f1ede7;
+
+}
+
+
+
+.designer-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 35px;
+
+}
+
+
+
+.designer-grid article {
+
+    background: white;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    transition: .4s;
+
+}
+
+
+
+.designer-grid article:hover {
+
+    transform: translateY(-12px);
+
+}
+
+
+
+.designer-grid h3 {
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.designer-grid p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+}
+/* ==========================
+   GALERIA EDITORIAL
+========================== */
+
+
+.gallery {
+
+    background: #fff;
+
+}
+
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    grid-auto-rows: 350px;
+
+    gap: 25px;
+
+}
+
+
+
+.gallery-item {
+
+    overflow: hidden;
+
+}
+
+
+
+.gallery-item img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+.gallery-item.large {
+
+    grid-column: span 2;
+
+}
+
+
+
+
+
+/* ==========================
+   FRASE DE DESTAQUE
+========================== */
+
+
+.quote {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+
+    url("images/quote-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+
+.quote-content {
+
+    max-width: 900px;
+
+}
+
+
+
+.quote h2 {
+
+    font-size: clamp(35px,5vw,70px);
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    margin-top: 30px;
+
+}
+
+
+
+
+
+/* ==========================
+   NEWSLETTER
+========================== */
+
+
+.newsletter {
+
+    background: #f1ede7;
+
+    text-align: center;
+
+}
+
+
+
+.newsletter-box {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+
+.newsletter h2 {
+
+    font-size: 55px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.newsletter p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.newsletter form {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+.newsletter input {
+
+    width: 60%;
+
+    padding: 20px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+}
+
+
+
+.newsletter button {
+
+    padding: 20px 40px;
+
+    border: none;
+
+    background: #111;
+
+    color:white;
+
+    cursor:pointer;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+/* ==========================
+   CONTATO
+========================== */
+
+
+.contact {
+
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap:80px;
+
+}
+
+
+
+.contact-text h2 {
+
+    font-size:60px;
+
+    font-weight:500;
+
+    margin:25px 0;
+
+}
+
+
+
+.contact-text p {
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+
+
+.contact-info {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+
+
+.contact-info div {
+
+    border-bottom:1px solid #ddd;
+
+    padding-bottom:25px;
+
+}
+
+
+
+.contact-info h3 {
+
+    font-size:25px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.contact-info p {
+
+    color:#777;
+
+}
+
+
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+.footer {
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 8%;
+
+}
+
+
+
+.footer-logo {
+
+    font-family:'Playfair Display',serif;
+
+    font-size:45px;
+
+    letter-spacing:6px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer p {
+
+    color:#aaa;
+
+}
+
+
+
+.footer-links {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin:35px 0;
+
+}
+
+
+
+.footer-links a {
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.copyright {
+
+    color:#777;
+
+    font-size:13px;
+
+}
+/* ==========================
+   ANIMAÇÕES
+========================== */
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.hero-content {
+
+    animation: aparecer 1.2s ease;
+
+}
+
+
+
+
+
+/* ==========================
+   TABLET
+========================== */
+
+
+@media(max-width:1000px){
+
+
+    .header {
+
+        padding:25px 5%;
+
+    }
+
+
+
+    .menu {
+
+        gap:15px;
+
+    }
+
+
+
+    .intro,
+    .history,
+    .sustainable,
+    .contact {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .editorial-grid,
+    .trend-container,
+    .designer-grid {
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+
+    .history-image img {
+
+        height:550px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+
+@media(max-width:700px){
+
+
+
+    section {
+
+        padding:80px 6%;
+
+    }
+
+
+
+    .header {
+
+        flex-direction:column;
+
+        gap:20px;
+
+        position:absolute;
+
+    }
+
+
+
+    .logo {
+
+        font-size:25px;
+
+    }
+
+
+
+    .menu {
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+
+    .menu a {
+
+        font-size:11px;
+
+    }
+
+
+
+    .hero {
+
+        height:100vh;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:45px;
+
+    }
+
+
+
+    .description {
+
+        font-size:15px;
+
+    }
+
+
+
+
+    .intro-image img {
+
+        height:450px;
+
+    }
+
+
+
+
+
+    .editorial-grid,
+    .trend-container,
+    .designer-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .fashion-card img {
+
+        height:400px;
+
+    }
+
+
+
+
+    .history-image img {
+
+        height:450px;
+
+    }
+
+
+
+
+
+    .sustainable-gallery {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+    .sustainable-gallery img:nth-child(2){
+
+        margin-top:0;
+
+    }
+
+
+
+
+
+    .gallery-grid {
+
+        grid-template-columns:1fr;
+
+        grid-auto-rows:300px;
+
+    }
+
+
+
+
+    .gallery-item.large {
+
+        grid-column:auto;
+
+    }
+
+
+
+
+
+    .newsletter h2 {
+
+        font-size:38px;
+
+    }
+
+
+
+
+
+    .newsletter form {
+
+        flex-direction:column;
+
+    }
+
+
+
+    .newsletter input {
+
+        width:100%;
+
+    }
+
+
+
+
+
+    .newsletter button {
+
+        width:100%;
+
+    }
+
+
+
+
+
+    .contact-text h2 {
+
+        font-size:42px;
+
+    }
+
+
+
+
+
+    .footer-links {
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
 }
