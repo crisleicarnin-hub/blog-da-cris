@@ -1,63 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Fashion - Moda Contemporânea</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header>
-   <div class="logo">FASHION</div>
-   <nav>
-   <a href="#home">Home</a>
-   <a href="#colecao">Coleção</a>
-   <a href="#sobre">Sobre</a>
-   <a href="#contato">Contato</a>
-   </nav>
-   </header>
-
-   <section id="home" class="hero">
-   <div class="hero-content">
-   <h1>Elegância & Estilo</h1>
-   <p>Roupas que expressam sua personalidade</p>
-   <button>Explorar Coleção</button>
-   </div>
-   </section>
-
-   <section id="colecao" class="colecao">
-   <h2>Nossa Coleção</h2>
-   <div class="produtos">
-   <div class="produto">
-   <div class="imagem"></div>
-   <h3>Vestido Clássico</h3>
-   <p>R$ 299,90</p>
-   </div>
-   <div class="produto">
-   <div class="imagem"></div>
-   <h3>Blusa Premium</h3>
-   <p>R$ 149,90</p>
-   </div>
-   <div class="produto">
-   <div class="imagem"></div>
-   <h3>Calça Elegante</h3>
-   <p>R$ 189,90</p>
-   </div>
-   </div>
-   </section>
-
-   <section id="sobre" class="sobre">
-   <h2>Sobre Nós</h2>
-   <p>Criamos peças únicas que combinam conforto e estilo. Cada detalhe é pensado para você brilhar.</p>
-   </section>
-
-   <footer id="contato">
-   <p>&copy; 2024 Fashion. Todos os direitos reservados.</p>
-   </footer>
-</body>
-</html>
-style.css:
-
 * {
    margin: 0;
    padding: 0;
@@ -65,11 +5,10 @@ style.css:
 }
 
 body {
-   font-family: 'Arial', sans-serif;
+   font-family: Arial, sans-serif;
    color: #333;
 }
 
-/* Header */
 header {
    background-color: #8B0000;
    color: #F5F5DC;
@@ -77,66 +16,42 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   position: sticky;
-   top: 0;
-   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .logo {
    font-size: 28px;
    font-weight: bold;
-   letter-spacing: 2px;
 }
 
 nav a {
    color: #F5F5DC;
    margin-left: 30px;
    text-decoration: none;
-   transition: 0.3s;
-   font-weight: 500;
 }
 
-nav a:hover {
-   color: #D2691E;
-}
-
-/* Hero Section */
 .hero {
-   background: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%);
+   background: linear-gradient(135deg, #8B0000, #A52A2A);
    color: #F5F5DC;
-   padding: 120px 40px;
+   padding: 80px 40px;
    text-align: center;
 }
 
 .hero h1 {
    font-size: 48px;
    margin-bottom: 15px;
-   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.hero p {
-   font-size: 20px;
-   margin-bottom: 30px;
 }
 
 .hero button {
    background-color: #F5F5DC;
    color: #8B0000;
-   border: none;
    padding: 12px 30px;
-   font-size: 16px;
+   border: none;
    border-radius: 5px;
    cursor: pointer;
    font-weight: bold;
-   transition: 0.3s;
+   margin-top: 20px;
 }
 
-.hero button:hover {
-   background-color: #D2691E;
-   color: #F5F5DC;
-}
-
-/* Coleção */
 .colecao {
    padding: 60px 40px;
    background-color: #F5F5DC;
@@ -144,49 +59,36 @@ nav a:hover {
 }
 
 .colecao h2 {
-   font-size: 36px;
    color: #8B0000;
    margin-bottom: 40px;
+   font-size: 36px;
 }
 
 .produtos {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
    gap: 30px;
 }
 
 .produto {
    background: white;
+   padding: 20px;
    border-radius: 10px;
-   overflow: hidden;
    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-   transition: 0.3s;
-}
-
-.produto:hover {
-   transform: translateY(-10px);
-   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .imagem {
    width: 100%;
    height: 200px;
-   background: linear-gradient(135deg, #8B0000, #D2691E);
+   background: #8B0000;
+   border-radius: 5px;
 }
 
 .produto h3 {
    color: #8B0000;
-   padding: 15px;
-   font-size: 18px;
+   margin-top: 15px;
 }
 
-.produto p {
-   color: #666;
-   padding: 0 15px 15px;
-   font-weight: bold;
-}
-
-/* Sobre */
 .sobre {
    background-color: #8B0000;
    color: #F5F5DC;
@@ -194,24 +96,9 @@ nav a:hover {
    text-align: center;
 }
 
-.sobre h2 {
-   font-size: 36px;
-   margin-bottom: 20px;
-}
-
-.sobre p {
-   font-size: 18px;
-   max-width: 600px;
-   margin: 0 auto;
-   line-height: 1.6;
-}
-
-/* Footer */
 footer {
    background-color: #333;
    color: #F5F5DC;
    text-align: center;
    padding: 20px;
-   margin-top: 40px;
-}
 }
