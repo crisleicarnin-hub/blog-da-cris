@@ -155,3 +155,6 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
 }
+body {
+    background: pink !important;
+}
