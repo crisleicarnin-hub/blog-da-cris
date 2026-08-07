@@ -1,514 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-}
-</style>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Moda Viva</title>
 
-<link rel="stylesheet" href="./style.css">
-:root {
-    --ink: #13113d;
-    --blue: #2854ff;
-    --pink: #ff337c;
-    --yellow: #ffd734;
-    --lime: #c8ff39;
-    --cream: #fff9ec;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
+<style>
 
 body {
-    margin: 0;
-    font-family: "Work Sans", sans-serif;
-    color: var(--ink);
-
-    background: linear-gradient(
-        135deg,
-        #fff9ec,
-        #ffe7f0,
-        #fff9ec
-    );
+    margin:0;
+    background:#fff9ec;
+    font-family:"Work Sans", sans-serif;
+    color:#13113d;
 }
-
-
-h1, h2, h3 {
-    font-family: "Playfair Display", serif;
-}
-
-
-/* CABEÇALHO */
-
-header {
-    background: var(--cream);
-    border-bottom: 2px solid var(--ink);
-}
-
-
-nav {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-nav a {
-    color: var(--ink);
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: bold;
-}
-
-
-
-
-
-/* PARTE PRINCIPAL */
 
 .hero {
-
-    background: var(--blue);
-
-    padding: 60px 40px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 360px;
-
-    gap: 40px;
-
-    align-items: center;
-
+    background:#2854ff;
+    padding:60px 40px;
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:40px;
+    align-items:center;
 }
-
 
 .hero h2 {
-
-    color: var(--cream);
-
-    font-size: clamp(40px,6vw,70px);
-
-    line-height: .95;
-
+    color:#fff9ec;
+    font-size:60px;
 }
-
-
-
-.hero p {
-
-    color:white;
-
-    font-size:18px;
-
-    line-height:1.6;
-
-}
-
-
-
-
-
-/* IMAGEM MENOR */
 
 .imagem {
-
     width:360px;
-
     height:430px;
-
-    overflow:hidden;
-
     border-radius:40px;
-
-    border:3px solid var(--ink);
-
-    box-shadow:10px 10px 0 var(--yellow);
-
+    overflow:hidden;
+    border:3px solid #13113d;
+    box-shadow:10px 10px 0 #ffd734;
 }
-
-
 
 .imagem img {
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-
 }
-
-
-
-
-
-button {
-
-    background:var(--yellow);
-
-    border:2px solid var(--ink);
-
-    padding:14px 25px;
-
-    border-radius:40px;
-
-    font-weight:bold;
-
-}
-
-
-
-
-
-/* FAIXA */
 
 .faixa {
-
-    background:var(--yellow);
-
-    border-top:2px solid var(--ink);
-
-    border-bottom:2px solid var(--ink);
-
+    background:#ffd734;
     padding:20px;
-
     text-align:center;
-
-    font-weight:900;
-
-    letter-spacing:3px;
-
+    font-weight:bold;
 }
-
-
-
-
-
-/* COLEÇÕES */
-
-
-#colecoes {
-
-    padding:80px 40px;
-
-}
-
-
-
-.cards {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
 
 .card {
-
     background:white;
-
-    border:2px solid var(--ink);
-
+    border:2px solid #13113d;
     border-radius:30px;
-
     padding:30px;
-
-    box-shadow:8px 8px 0 var(--pink);
-
-    transition:.3s;
-
 }
-
-
-
-.card:hover {
-
-    transform:translateY(-8px);
-
-}
-
-
-
-
-
-/* MANIFESTO */
-
 
 #manifesto {
-
-    background:var(--pink);
-
+    background:#ff337c;
     color:white;
-
-    padding:80px 40px;
-
+    padding:80px;
     text-align:center;
-
 }
-
-
-
-#manifesto h2 {
-
-    font-size:50px;
-
-}
-
-
-
-
-
-/* TENDÊNCIAS */
-
-
-#tendencias {
-
-    background:var(--ink);
-
-    color:var(--cream);
-
-    padding:80px 40px;
-
-}
-
-
-
-
 
 footer {
-
-    background:var(--lime);
-
+    background:#c8ff39;
     padding:40px;
-
-    border-top:2px solid var(--ink);
-
 }
 
+</style>
 
-
-
-@media(max-width:800px){
-
-    .hero {
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .imagem {
-
-        width:100%;
-
-    }
-
-
-    .cards {
-
-        grid-template-columns:1fr;
-
-    }
-
-}
 </head>
-
-
-<body>
-
-
-<header>
-
-<nav>
-
-<h1>Moda Viva</h1>
-
-<div>
-<a href="#colecoes">Coleções</a>
-<a href="#tendencias">Tendências</a>
-<a href="#manifesto">Manifesto</a>
-</div>
-
-</nav>
-
-</header>
-
-
-
-<section class="hero">
-
-
-<div>
-
-<p>NOVA ERA DA MODA</p>
-
-<h2>
-Vista sua personalidade.
-Crie seu próprio estilo.
-</h2>
-
-
-<p>
-A Moda Viva traz tendências, criatividade e peças que representam quem você é.
-</p>
-
-
-<button>
-Explorar coleção
-</button>
-
-
-</div>
-
-
-
-<div class="imagem">
-
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
-
-</div>
-
-
-</section>
-
-
-
-
-<div class="faixa">
-
-MODA ✦ ESTILO ✦ IDENTIDADE ✦ CRIATIVIDADE ✦
-
-</div>
-
-
-
-
-<section id="colecoes">
-
-
-<h2>
-Nossas coleções
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Elegância Urbana
-</h3>
-
-<p>
-Peças modernas para o dia a dia.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Minimalismo Chic
-</h3>
-
-<p>
-Simplicidade com muita personalidade.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Moda Sustentável
-</h3>
-
-<p>
-Estilo pensando no futuro.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-<section id="manifesto">
-
-
-<h2>
-A moda conta histórias.
-</h2>
-
-
-<p>
-Cada roupa mostra um pouco de quem somos.
-</p>
-
-
-</section>
-
-
-
-
-
-<section id="tendencias">
-
-
-<h2>
-Tendências atuais
-</h2>
-
-
-<p>
-Cores fortes, peças clássicas e novas formas de expressão.
-</p>
-
-
-</section>
-
-
-
-
-
-<footer>
-
-<h2>
-Moda Viva
-</h2>
-
-<p>
-Estilo sem limites.
-</p>
-
-
-</footer>
-
-
-
-</body>
-
-</html>
