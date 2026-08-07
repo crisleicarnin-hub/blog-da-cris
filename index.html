@@ -1,129 +1,217 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moda Viva | Blog de Moda</title>
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link
+    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap)"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="container nav">
+      <div class="logo">Moda<span>Viva</span></div>
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #222;
-    background-color: #fff;
-    line-height: 1.6;
-}
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#tendencias">Tendencias</a></li>
+          <li><a href="#looks">Looks</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-/* Cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background: black;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
+    <div class="container hero-conteudo">
+      <div class="hero-texto">
+        <p class="tag">Blog de Moda & Estilo</p>
+        <h1>Elegancia que inspira em cada detalhe</h1>
+        <p>
+          Descubra tendencias, looks sofisticados, dicas de beleza e o melhor
+          do universo fashion em um espaco criado para quem ama estilo.
+        </p>
+        <a href="#tendencias" class="botao">Explorar conteudos</a>
+      </div>
+    </div>
+  </section>
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
+  <main>
+    <section class="secao intro">
+      <div class="container intro-grid">
+        <div>
+          <p class="subtitulo">Sobre o blog</p>
+          <h2>Moda com personalidade, autenticidade e charme</h2>
+        </div>
+        <div>
+          <p>
+            O ModaViva traz inspiracoes para o dia a dia, eventos especiais e
+            estacoes do ano. Aqui voce encontra combinacoes modernas, pecas
+            coringa, acessorios em alta e referencias elegantes para montar um
+            guarda-roupa cheio de atitude.
+          </p>
+        </div>
+      </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    <section class="secao" id="tendencias">
+      <div class="container">
+        <div class="titulo-secao">
+          <p class="subtitulo">Em alta</p>
+          <h2>Tendencias da temporada</h2>
+        </div>
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
+        <div class="cards">
+          <article class="card">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80)" alt="Modelo usando look monocromatico elegante" />
+            <div class="card-conteudo">
+              <span class="categoria">Tendencia</span>
+              <h3>Looks monocromaticos que alongam a silhueta</h3>
+              <p>
+                Tons unificados criam uma producao sofisticada e facil de adaptar
+                para diferentes ocasioes.
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
 
-nav a:hover {
-    border-bottom: 2px solid white;
-}
+          <article class="card">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80)" alt="Mulher com acessorios sofisticados e bolsa moderna" />
+            <div class="card-conteudo">
+              <span class="categoria">Acessorios</span>
+              <h3>Bolsas estruturadas e joias minimalistas</h3>
+              <p>
+                A combinacao perfeita entre elegancia, praticidade e refinamento
+                para elevar qualquer visual.
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
 
-/* Hero */
-.hero {
-    background: url('imagens/hero.jpg') center/cover no-repeat;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
+          <article class="card">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80)" alt="Look casual chic com blazer e calca de alfaiataria" />
+            <div class="card-conteudo">
+              <span class="categoria">Estilo</span>
+              <h3>Alfaiataria moderna no cotidiano</h3>
+              <p>
+                Blazers, coletes e calcas amplas ganham novas leituras em
+                producoes urbanas e cheias de classe.
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-}
+    <section class="secao destaque-claro" id="looks">
+      <div class="container grid-looks">
+        <div class="imagem-grande">
+          <img src="[images.unsplash.com](https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80)" alt="Mulher elegante em ambiente urbano com look fashion" />
+        </div>
 
-.hero-text {
-    position: relative;
-    z-index: 1;
-}
+        <div class="texto-looks">
+          <p class="subtitulo">Looks inspiradores</p>
+          <h2>Combinacoes para arrasar do casual ao sofisticado</h2>
+          <p>
+            Explore propostas versateis com vestidos fluidos, pecas em linho,
+            conjuntos de alfaiataria, saltos delicados e sneakers estilosos.
+            O segredo esta em equilibrar conforto, tendencia e autenticidade.
+          </p>
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
+          <div class="lista-dicas">
+            <div class="dica">
+              <h3>Casual chic</h3>
+              <p>Jeans reto, camisa branca e blazer bege para um visual atemporal.</p>
+            </div>
+            <div class="dica">
+              <h3>Noite elegante</h3>
+              <p>Vestido preto, clutch metalica e sandalias finas para impacto imediato.</p>
+            </div>
+            <div class="dica">
+              <h3>Office fashion</h3>
+              <p>Calca de alfaiataria com top neutro e terceira peca marcante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.hero p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
+    <section class="secao" id="destaques">
+      <div class="container">
+        <div class="titulo-secao">
+          <p class="subtitulo">Editorial</p>
+          <h2>Destaques especiais</h2>
+        </div>
 
-.btn {
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-}
+        <div class="grid-destaques">
+          <article class="destaque-card grande">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80)" alt="Editorial de moda com vestido sofisticado" />
+            <div class="destaque-texto">
+              <span class="categoria">Editorial</span>
+              <h3>O romantismo contemporaneo nas passarelas urbanas</h3>
+              <p>
+                Texturas leves, recortes femininos e tons suaves compoem uma
+                narrativa delicada e poderosa.
+              </p>
+            </div>
+          </article>
 
-.btn:hover {
-    background: #ddd;
-}
+          <article class="destaque-card">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80)" alt="Modelo usando conjunto elegante em tom neutro" />
+            <div class="destaque-texto">
+              <span class="categoria">Street style</span>
+              <h3>Neutros refinados com toque contemporaneo</h3>
+            </div>
+          </article>
 
-/* Seções */
-.section {
-    padding: 50px 40px;
-    max-width: 1100px;
-    margin: auto;
-}
+          <article class="destaque-card">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80)" alt="Look feminino com oculos escuros e acessorios de moda" />
+            <div class="destaque-texto">
+              <span class="categoria">Beleza</span>
+              <h3>Acessorios que transformam producoes basicas</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-}
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter-box">
+        <div>
+          <p class="subtitulo">Fique por dentro</p>
+          <h2>Receba novidades do mundo fashion</h2>
+          <p>
+            Assine nossa newsletter para acompanhar tendencias, dicas de estilo
+            e inspiracoes exclusivas.
+          </p>
+        </div>
 
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
+        <form class="form-newsletter">
+          <input type="email" placeholder="Digite seu melhor e-mail" />
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-.card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>© 2026 ModaViva - Todos os direitos reservados.</p>
+      <div class="redes">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
