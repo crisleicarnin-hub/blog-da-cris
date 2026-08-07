@@ -1,84 +1,129 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vogue Style - Moda</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">VOGUE STYLE</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#tendencias">Tendências</a></li>
-                <li><a href="#editoriais">Editoriais</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Hero com imagem menor -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Moda é Arte</h1>
-            <p>Descubra as últimas tendências e inspirações do mundo fashion.</p>
-            <a href="#tendencias" class="btn">Explorar</a>
-        </div>
-    </section>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
 
-    <!-- Tendências -->
-    <section id="tendencias" class="section">
-        <h2>Tendências</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://source.unsplash.com/400x500/?fashion,model" alt="Tendência 1">
-                <h3>Minimalismo Chic</h3>
-                <p>Peças básicas com cortes sofisticados e cores neutras.</p>
-            </div>
-            <div class="card">
-                <img src="https://source.unsplash.com/400x500/?fashion,street" alt="Tendência 2">
-                <h3>Street Style</h3>
-                <p>O estilo urbano que domina as passarelas e as ruas.</p>
-            </div>
-            <div class="card">
-                <img src="https://source.unsplash.com/400x500/?fashion,runway" alt="Tendência 3">
-                <h3>Alta-Costura</h3>
-                <p>Luxo e exclusividade em cada detalhe das peças.</p>
-            </div>
-        </div>
-    </section>
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    <!-- Editorias -->
-    <section id="editoriais" class="section dark">
-        <h2>Editoriais</h2>
-        <div class="editorial-grid">
-            <div class="editorial-item">
-                <img src="https://source.unsplash.com/600x400/?fashion,editorial" alt="Editorial 1">
-                <p>Editorial Outono/Inverno 2026</p>
-            </div>
-            <div class="editorial-item">
-                <img src="https://source.unsplash.com/600x400/?fashion,magazine" alt="Editorial 2">
-                <p>Editorial Primavera/Verão 2026</p>
-            </div>
-        </div>
-    </section>
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
-    <!-- Contato -->
-    <section id="contato" class="section">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-    <footer>
-        <p>&copy; 2026 Vogue Style - Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
 
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Hero */
+.hero {
+    background: url('imagens/hero.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* Seções */
+.section {
+    padding: 50px 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object
