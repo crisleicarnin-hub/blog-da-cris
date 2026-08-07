@@ -1,346 +1,56 @@
-<style>
+/* ======================================
+   Moda Viva - Arquivo de Estilos
+   ====================================== */
 
-
-:root{
---ink:#13113d;
---blue:#2854ff;
---pink:#ff337c;
---yellow:#ffd734;
---lime:#c8ff39;
---cream:#fff9ec;
-}
-
-
-*{
-box-sizing:border-box;
-}
-
+/* Configurações gerais */
 
 body{
-
-margin:0;
-
-font-family:"Work Sans",sans-serif;
-
-color:var(--ink);
-
-background:linear-gradient(135deg,#fff9ec,#ffe8f1,#fff9ec);
-
+    margin:0;
+    padding:0;
+    font-family:"Work Sans",sans-serif;
+    background:#fff9ec;
+    color:#13113d;
 }
 
-
-
-h1,h2,h3{
-
-font-family:"Playfair Display",serif;
-
-}
-
-
+/* Cabeçalho */
 
 header{
-
-background:var(--cream);
-
-border-bottom:2px solid var(--ink);
-
+    background:#fff9ec;
+    border-bottom:2px solid #13113d;
 }
 
-
+/* Navegação */
 
 nav{
-
-padding:20px 40px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
 }
 
-
-
-.logo{
-
-font-size:35px;
-
-font-weight:900;
-
-}
-
-
-
-nav a{
-
-text-decoration:none;
-
-color:var(--ink);
-
-font-weight:bold;
-
-margin-left:20px;
-
-}
-
-
-
-
+/* Seção principal */
 
 .hero{
-
-
-background:var(--blue);
-
-padding:70px 40px;
-
-display:grid;
-
-grid-template-columns:1fr 380px;
-
-gap:50px;
-
-align-items:center;
-
-
+    display:grid;
+    grid-template-columns:1fr 380px;
+    gap:40px;
+    align-items:center;
 }
 
-
-
-.hero h2{
-
-font-size:65px;
-
-line-height:.9;
-
-color:var(--cream);
-
-margin:20px 0;
-
-}
-
-
-
-.hero p{
-
-font-size:18px;
-
-color:white;
-
-line-height:1.5;
-
-}
-
-
-
-button{
-
-background:var(--yellow);
-
-border:2px solid var(--ink);
-
-padding:15px 30px;
-
-border-radius:50px;
-
-font-weight:bold;
-
-}
-
-
-
-
-
-.imagem{
-
-width:360px;
-
-height:430px;
-
-border-radius:0 90px 0 90px;
-
-overflow:hidden;
-
-border:3px solid var(--ink);
-
-box-shadow:12px 12px 0 var(--yellow);
-
-}
-
-
-
-.imagem img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-}
-
-
-
-
-
-.faixa{
-
-background:var(--yellow);
-
-padding:20px;
-
-text-align:center;
-
-font-weight:900;
-
-letter-spacing:3px;
-
-border-top:2px solid var(--ink);
-
-border-bottom:2px solid var(--ink);
-
-}
-
-
-
-
-
-section{
-
-padding:80px 40px;
-
-}
-
-
-
-.titulo{
-
-text-align:center;
-
-font-size:50px;
-
-}
-
-
-
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-}
-
-
+/* Cartões */
 
 .card{
-
-background:white;
-
-padding:30px;
-
-border-radius:35px;
-
-border:2px solid var(--ink);
-
-box-shadow:8px 8px 0 var(--pink);
-
+    border-radius:30px;
+    transition:0.3s;
 }
 
-
-
-.card h3{
-
-font-size:30px;
-
+.card:hover{
+    transform:translateY(-5px);
 }
 
-
-
-
-
-#manifesto{
-
-background:var(--pink);
-
-color:white;
-
-text-align:center;
-
-}
-
-
-
-#manifesto h2{
-
-font-size:55px;
-
-}
-
-
-
-
-
-#tendencias{
-
-background:var(--ink);
-
-color:var(--cream);
-
-}
-
-
+/* Rodapé */
 
 footer{
-
-background:var(--lime);
-
-padding:40px;
-
-border-top:2px solid var(--ink);
-
+    text-align:center;
+    padding:40px;
 }
-
-
-
-
-
-@media(max-width:800px){
-
-
-.hero{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.hero h2{
-
-font-size:45px;
-
-}
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-.imagem{
-
-width:100%;
-
-}
-
-}
-
-
-<style>
